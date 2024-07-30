@@ -93,3 +93,12 @@
 
 // }
 
+fn main() {
+   let x = plus_one(5);
+
+   println!("the value is : {}", x)
+}
+
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
