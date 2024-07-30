@@ -72,6 +72,16 @@
 
 // }
 
+// fn main() {
+//     //array slicing
+//     let arr = [1,2,3,4,5];
+
+//     for val in middle.iter() {
+//         println!("{}", val);
+//     }
+
+// }
+
 // use std::io;
 
 // fn main() {
@@ -93,12 +103,97 @@
 
 // }
 
-fn main() {
-   let x = plus_one(5);
+// fn main() {
+//    let x = plus_one(5);
 
-   println!("the value is : {}", x)
-}
+//    println!("the value is : {}", x)
+// }
 
-fn plus_one(x: i32) -> i32 {
-    x + 1
-}
+// fn plus_one(x: i32) -> i32 {
+//     x + 1
+// }
+
+
+// if/else
+
+// fn main() {
+
+//     // if num % 4 == 0 {
+//     //     println!("divisible by 4");
+//     // } else if num % 3 == 0 {
+//     //     println!("divisible by 3");
+//     // } else if num % 2 == 0 {
+//     //     println!("divisble by 2")
+//     // } else {
+//     //     println!("number is not divisible by 4, 3, or 2")
+//     // }
+
+
+//     let predicate = true;
+
+//     let number = if predicate { 5 } else { 6 };
+//     println!("{number}")
+// }
+
+// loops
+
+//loop
+
+// fn main() {
+//     let mut count = 0;
+
+//     let result = loop {
+//         count += 1;
+
+//         if count == 10 {
+//             break count * 2;
+//         }
+//     };
+
+//     println!("{}", result);
+// }
+
+// fn main() {
+//     let mut count = 0;
+
+//     'counting_up: loop {
+//         println!("{}", count);
+
+//         let mut remaining = 10;
+
+//         loop { 
+//             println!("{}", remaining);
+//             if remaining == 9 {
+//                 break;
+//             }
+//             if count == 2 {
+//                 break 'counting_up;
+//             }
+//             remaining -= 1;
+//         }
+
+//         count += 1;
+
+//     }
+// }
+
+//while loop 
+
+// fn main() {
+//     let a = [10, 20, 30, 40, 50];
+//     let mut index = 0;
+
+//     while index < 5 {
+//         println!("the value is: {}", a[index]);
+
+//         index += 1;
+//     }
+// }
+
+// fn main() {
+//     let a = [1,2,3,4,5];
+
+//     for item in a.iter().rev() {
+//         println!("{}", item)
+//     }
+// }
