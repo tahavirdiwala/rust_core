@@ -1,4 +1,4 @@
-use std::any::type_name;
+// use std::any::type_name;
 
 // fn main() {
 //     let x = 5;
@@ -30,11 +30,44 @@ use std::any::type_name;
 // }
 
 
-fn type_of<T>(_: T) -> &'static str { // type checker in rust
-    type_name::<T>()
-}
+// fn type_of<T>(_: T) -> &'static str { // type checker in rust
+//     type_name::<T>()
+// }
 
-fn main() {
-   let num: u32 = "42".parse().expect("Not a number !");
-   println!("{}", type_of(num));
-}
+// fn main() {
+//    let num: u32 = "42".parse().expect("Not a number !");
+//    println!("{}", type_of(num));
+// }
+
+// tuple 
+
+// fn main() {
+//     let tup = (500, 6.4, 1);
+
+//     // let (x, y, z) = tup;
+
+//     // println!("x: {}", x);
+//     // println!("y: {}", y);
+//     // println!("z: {}", z)
+
+//     let x = tup.0;
+
+//     println!("{}", x)
+// }
+
+// arrays
+
+// fn main() {
+//     let list = [1, 3, 4, 17, 81];
+
+   
+//     for (index, item) in list.iter().enumerate() {
+//         println!("{} and {}", index, item)
+//     }
+
+
+//     for (index, _) in list.iter().enumerate() {
+//         println!("list: {}", list[index])
+//     }
+
+// }
