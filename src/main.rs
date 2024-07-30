@@ -71,3 +71,25 @@
 //     }
 
 // }
+
+// use std::io;
+
+// fn main() {
+//     let arr = [1,2,3,4,5];
+
+//     let mut index = String::new();
+
+//     println!("Please enter an array index.");
+
+//     io::stdin()
+//     .read_line(&mut index)
+//     .expect("Falied  to read line");
+
+//     let index: usize = index.trim().parse().expect("Index entered is not valid");
+
+//     let answer = arr[index];
+
+//     println!("ans : {}", answer)
+
+// }
+
