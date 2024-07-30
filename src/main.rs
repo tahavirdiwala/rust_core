@@ -1,3 +1,5 @@
+use std::any::type_name;
+
 // fn main() {
 //     let x = 5;
 //     println!("The value of x is: {x}");
@@ -26,3 +28,13 @@
 //     spaces = spaces.len();
 //     println!("spaces: {}", spaces)
 // }
+
+
+fn type_of<T>(_: T) -> &'static str { // type checker in rust
+    type_name::<T>()
+}
+
+fn main() {
+   let num: u32 = "42".parse().expect("Not a number !");
+   println!("{}", type_of(num));
+}
