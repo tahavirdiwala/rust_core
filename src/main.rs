@@ -197,3 +197,23 @@
 //         println!("{}", item)
 //     }
 // }
+
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+fn main() {
+    let mut user = User {
+        active: true,
+        username: String::from("someuser"),
+        email: String::from("someuser@gmail.com"),
+        sign_in_count: 1,
+    };
+
+    user.username = String::from("other@gmail.com");
+
+    println!("{}",user.username )
+}
