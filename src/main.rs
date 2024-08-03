@@ -197,6 +197,8 @@
 //         println!("{}", item)
 //     }
 // }
+#[derive(Debug)]
+#[warn(dead_code)]
 
 struct User {
     active: bool,
@@ -206,14 +208,15 @@ struct User {
 }
 
 fn main() {
-    let mut user = User {
+    let obj = build_user(String::from("some@gmail.com"), String::from("shanks"));
+    println!("{:#?}", obj);
+}
+
+fn build_user(email: String, username: String) -> User {
+    User {
         active: true,
-        username: String::from("someuser"),
-        email: String::from("someuser@gmail.com"),
+        username: username,
+        email: email,
         sign_in_count: 1,
-    };
-
-    user.username = String::from("other@gmail.com");
-
-    println!("{}",user.username )
+    }
 }
