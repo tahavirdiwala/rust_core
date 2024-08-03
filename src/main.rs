@@ -197,26 +197,41 @@
 //         println!("{}", item)
 //     }
 // }
-#[derive(Debug)]
-#[warn(dead_code)]
 
-struct User {
-    active: bool,
-    username: String,
-    email: String,
-    sign_in_count: u64,
-}
+// struct User {
+//     active: bool,
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+// }
+
+// fn main() {
+//     let obj = build_user(String::from("some@gmail.com"), String::from("shanks"));
+//     println!("{:#?}", obj);
+// }
+
+// fn build_user(email: String, username: String) -> User {
+//     User {
+//         active: true,
+//         username: username,
+//         email: email,
+//         sign_in_count: 1,
+//     }
+// }
+
+// struct Rectangle {
+//     width: u32,
+//     height: u32
+// }
 
 fn main() {
-    let obj = build_user(String::from("some@gmail.com"), String::from("shanks"));
-    println!("{:#?}", obj);
+   
 }
 
-fn build_user(email: String, username: String) -> User {
-    User {
-        active: true,
-        username: username,
-        email: email,
-        sign_in_count: 1,
-    }
-}
+// fn area(dimensions: (u32, u32)) -> u32 {
+//     dimensions.0 * dimensions.1
+// }
+
+// fn area(dimensions: &Rectangle) -> u32 {
+//     dimensions.width * dimensions.height
+// }
