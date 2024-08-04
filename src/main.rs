@@ -224,10 +224,6 @@
 //     height: u32
 // }
 
-fn main() {
-   
-}
-
 // fn area(dimensions: (u32, u32)) -> u32 {
 //     dimensions.0 * dimensions.1
 // }
@@ -235,3 +231,26 @@ fn main() {
 // fn area(dimensions: &Rectangle) -> u32 {
 //     dimensions.width * dimensions.height
 // }
+
+//methods
+#[derive(Debug)]
+
+struct Rectangle {
+    width: u32,
+    height: u32
+}
+
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
+
+fn main() {
+    let rect = Rectangle {
+        width: 30,
+        height:50
+    };
+
+    println!("{}", rect.area())
+}
