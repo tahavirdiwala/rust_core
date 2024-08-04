@@ -260,22 +260,41 @@ struct Rectangle {
     height: u32
 }
 
-impl Rectangle {
-    fn can_hold(&self, other: &Rectangle) -> bool {
-        self.width > other.width && self.height > other.height
-    }
-}
+// impl Rectangle {
+//     fn can_hold(&self, other: &Rectangle) -> bool {
+//         self.width > other.width && self.height > other.height
+//     }
+// }
 
-fn main() {
-    let rect = Rectangle {
-        width : 30,
-        height : 50
-    };
+// fn main() {
+//     let rect = Rectangle {
+//         width : 30,
+//         height : 50
+//     };
 
-    let rect2 = Rectangle {
-        width: 40,
-        height: 50,
-    };
+//     let rect2 = Rectangle {
+//         width: 40,
+//         height: 50,
+//     };
 
-    println!("{}", rect.can_hold(&rect2))
-}
+//     println!("{}", rect.can_hold(&rect2))
+// }
+
+// #[warn(dead_code)]
+// impl Rectangle {
+//     fn square(size: u32) -> Self {
+//         Self {
+//             width: size,
+//             height: size
+//         }
+//     }
+// }
+
+// fn main() {
+//     let rect = Rectangle {
+//         width: 30,
+//         height: 40
+//     };
+
+//     println!("{:#?}", Rectangle::square(3))
+// }
