@@ -331,22 +331,22 @@ struct Rectangle {
 
 //control flow
 
-enum Coins {
-    Penny,
-    Nickel,
-    Dime,
-    Quarter,
-}
+// enum Coins {
+//     Penny,
+//     Nickel,
+//     Dime,
+//     Quarter,
+// }
 
-fn main() {
-    println!("{}", value_in_cents(Coins::Nickel));
-}
+// fn main() {
+//     println!("{}", value_in_cents(Coins::Nickel));
+// }
 
-fn value_in_cents(coin: Coins) -> u8 {
-    match coin {
-        Coins::Penny => 1,
-        Coins::Nickel => 2,
-        Coins::Dime => 3,
-        Coins::Quarter => 4
-    }
-}
+// fn value_in_cents(coin: Coins) -> u8 {
+//     match coin {
+//         Coins::Penny => 1,
+//         Coins::Nickel => 2,
+//         Coins::Dime => 3,
+//         Coins::Quarter => 4
+//     }
+// }
