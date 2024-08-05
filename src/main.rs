@@ -301,12 +301,21 @@ struct Rectangle {
 
 //enums 
 
-enum IpAddrKind {
-    V4,
-    V6
-}
 
-fn main() {
-    let four = IpAddrKind::V4;
-    let six = IpAddrKind::V6;
-}
+// fn main() {
+//     let four = IpAddrKind::V4;
+//     let six = IpAddrKind::V6;
+// }
+
+// #[derive(Debug)]
+// enum IpAddrKind {
+//     V4(String),
+//     V6(String),
+// }
+
+// fn main() {
+//     let home = IpAddrKind::V4(String::from("127.0.0.1"));
+//     let back = IpAddrKind::V6(String::from("::1"));
+
+//     println!("{:#?} {:#?}", home, back)
+// }
