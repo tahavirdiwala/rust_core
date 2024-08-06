@@ -233,7 +233,6 @@
 // }
 
 //methods
-#[derive(Debug)]
 
 // struct Rectangle {
 //     width: u32,
@@ -254,11 +253,6 @@
 
 //     println!("{}", rect.area())
 // }
-
-struct Rectangle {
-    width: u32,
-    height: u32
-}
 
 // impl Rectangle {
 //     fn can_hold(&self, other: &Rectangle) -> bool {
@@ -366,3 +360,10 @@ struct Rectangle {
 //     println!("{:?} {:?}, ", five,six)
 
 // }
+
+fn main() {
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {max}");
+    }
+}
