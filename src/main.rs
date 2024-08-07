@@ -361,9 +361,16 @@
 
 // }
 
+// fn main() {
+//     let config_max = Some(3u8);
+//     if let Some(max) = config_max {
+//         println!("The maximum is configured to be {max}");
+//     }
+// }
+
 fn main() {
-    let config_max = Some(3u8);
-    if let Some(max) = config_max {
-        println!("The maximum is configured to be {max}");
-    }
+    let mut v: Vec<i32> = Vec::new();
+    v.push(5);
+    v.push(6);
+    println!("{:?}", v);
 }
