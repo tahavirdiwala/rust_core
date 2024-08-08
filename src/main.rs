@@ -377,21 +377,21 @@
 //     println!("{:?}", v);
 // }
 
-fn main() {
-    //accessing vectors value at specific index we can used index method or get method
+// fn main() {
+//     //accessing vectors value at specific index we can used index method or get method
 
 
-    let mut v: Vec<i32> = Vec::new();
-    v.push(5);
-    v.push(5);
-    v.push(2);
+//     let mut v: Vec<i32> = Vec::new();
+//     v.push(5);
+//     v.push(5);
+//     v.push(2);
 
-    let third_element: Option<&i32> = v.get(5);
+//     let third_element: Option<&i32> = v.get(5);
 
 
-    match third_element {
-        Some(third) => println!("{third}"),
-        None => println!("no such element exists"),
-    }
+//     match third_element {
+//         Some(third) => println!("{third}"),
+//         None => println!("no such element exists"),
+//     }
 
-}
+// }
